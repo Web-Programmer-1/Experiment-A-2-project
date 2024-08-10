@@ -619,8 +619,96 @@ text-align: left;
   filter: opacity(45%);
   font-weight: 400;
   line-height: 2;
+}
+.footer-container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  height: 370px;
+  margin: auto;
+  /* border: 3px solid lime; */
+}
+.get-start1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.get-start2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.get-start1>a{
+text-decoration: none;
+color: rgba(255, 255, 255, 0.5);
+font-family: Inter;
+font-size: 23px;
+font-weight: 400;
+line-height: 120%;
+}
+.get-start2>a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 120%;
+  
+  }
+.get-start1>h1{
+color: rgb(255, 255, 255);
+font-size: 32px;
+font-weight: 700;
+line-height: 120%;
+background: linear-gradient(to right, tomato,orange);
+color: transparent;
+background-clip: text;
+}
+.get-start2>h1{
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+  background: linear-gradient(to right, tomato,orange);
+color: transparent;
+background-clip: text;
+  }
+.fitness>h1{
+color: rgb(230, 83, 60);
+font-size: 60px;
+font-weight: 800;
+line-height: 120%;
+font-style: italic;
+}
+.fitness>p{
+color: rgba(255, 255, 255, 0.5);
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+}
+.last{
+border-top: 2px solid  rgba(255, 255, 255, 0.5);
+width: 50%;
+margin: auto;
 
 
+}
+.last>h1{
+display: flex;
+justify-content: center;
+align-items: center;
+color: rgba(255, 255, 255, 0.5);
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.3px;
+margin-top: 5px;
 }
 
 
@@ -729,6 +817,7 @@ text-align: left;
   .bmi-content{
     padding: 12px 10px;
     max-width: 100%;
+    transform: translateY(90px);
   }
 
   .calc-container{
@@ -772,56 +861,10 @@ text-align: left;
     color: transparent;
     background-clip: text;
   }
-  /* form>input[type="number"]{ */
-    height: 43px;
-    width: 200px;
-    text-align: center;
-    margin-top: 4px;
-    margin-left: 2px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-radius: 10px;
-    font-size: 18px;
-  
-    color: #fff;
-  /* } */
-  /* form>#select2{ */
-    height: 43px;
-    width: 100%;
-    text-align: center;
-    margin-top: 4px;
-    margin-left: 2px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    color: #756868c7;
-    border-radius: 10px;
-    font-size: 18px;
-    overflow-x: hidden;
-  
-  /* } */
-  /* form>#select1{ */
-    height: 43px;
-    width: 200px;
-    text-align: center;
-    margin-top: 4px;
-    margin-left: 2px;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: none;
-    border-radius: 10px;
-    color: #706363cd;
-    border-radius: 10px;
-    font-size: 18px;
-  
-  /* } */
-  .bmi-input{
-    /* display: inline; */
-    
-    /* overflow-x: hidden; */
-    /* margin: auto; */
-
-  }
+ 
   .bmi-input>h1{
     margin-left: 13px;
+   
 
   }
   .bmi-input>p{
@@ -847,11 +890,68 @@ text-align: left;
   .team-content{
     justify-content: center;
     align-items: center;
+    transform: translateY(-20px);
+  }
+  .team-content>h1{
+    font-size: 40px;
   }
   .team-content>p{
     margin-left: 14px;
+    line-height: -10px;
   }
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    gap: 20px;
+    height: auto;
+    overflow-x: hidden;
+  }
+  .fitness>h1{
+    font-size: 42px;
+    transform: translateY(-10px);
 
+  }
+  .fitness>p{
+    width: 82%;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+
+  }
+  .get-start1>h1{
+     font-size: 30px;
+     background:linear-gradient(to right, tomato,orange) ;
+     color: transparent;
+     background-clip: text;
+  }
+  .get-start1>a{
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 0.3%;
+   transform: translateX(-10px);
+ }
+ .get-start2>h1{
+  font-size: 30px;
+  background:linear-gradient(to right, tomato,orange) ;
+  color: transparent;
+  background-clip: text;
+}
+.get-start2>a{
+font-size: 18px;
+font-weight: 500;
+letter-spacing: 0.3%;
+transform: translateX(-16px);
+}
+.last{
+  /* border: 2px solid tomato; */
+  margin: 15px auto;
+  width: 90%;
+  border-top: 2px solid grey;
+}
 
 
 }
