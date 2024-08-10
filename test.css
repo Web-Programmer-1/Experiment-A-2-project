@@ -82,6 +82,7 @@ ul>li>a:hover{
   border-radius: 5px;
   position: absolute;
   right: 100px;
+  display: none;
   
 }
 .nav-toggle:focus{
@@ -120,7 +121,7 @@ ul>li>a:hover{
   transform: translateY(6px);
 }
 .workout-container{
-  width: 70%;
+  width: 73%;
   margin: 30px auto;
   
   display: flex;
@@ -298,7 +299,7 @@ text-align: left;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 100%;
+  
 
 }
 .group-content>h1{
@@ -492,7 +493,13 @@ line-height: 17px;
 letter-spacing: 0.3px;
 text-align: left;
 }
-form>input[type="number"]{
+
+
+.input-grid{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+.input-grid>input[type="number"]{
   height: 43px;
   width: 250px;
   text-align: center;
@@ -505,7 +512,7 @@ form>input[type="number"]{
 
   color: #fff;
 }
-form>#select1{
+.input-grid>#select1{
   height: 43px;
   width: 200px;
   text-align: center;
@@ -519,7 +526,7 @@ form>#select1{
   font-size: 18px;
 
 }
-form>#select2{
+#select2{
   height: 43px;
   width: 507px;
   text-align: center;
@@ -582,33 +589,47 @@ form>#select2{
 
 @media screen and (max-width:576px) {
    *{
-    border: 1px solid red;
+    /* border: 1px solid red; */
    }
    body{
-    border: 2px solid green;
+    /* border: 2px solid green; */
    }
+
   .workout-container{
     flex-direction: column;
     overflow-x: hidden;
-    max-width: 80%;
+    /* max-width: 90%; */
     /* border: 2px solid red; */
-   
+    width: 100%;
+  
+  }
+  .workout-image{
+   transform: translateX(50px) translateY(-75px);
   }
   .workout-image,img{
     max-width: 90%;
   }
   .workout-content{
-    max-width: 100%;
+    /* max-width: 100%; */
+    margin: auto;
+    transform: translateX(20px) translateY(40px);
   }
   .workout-image,.card1{
     max-width: 100%;
     margin-right: 50px;
     margin-top: 30px;
   }
+  .logo>h1{
+    transform: translateX(-30px);
+  }
   ul{
     display: none;
     max-width: 100%;
     overflow-x: hidden;
+  }
+  .nav-toggle{
+    display: block;
+    transform: translateX(50px) translateY(-20px);
   }
   .toggle>button{
     margin-left: 40px;
@@ -654,9 +675,46 @@ form>#select2{
 
   .calc-container{
     flex-direction: column;
+    width: 100%;
+    /* border: 2px solid lime; */
+    height: auto;
 
   }
-  form>input[type="number"]{
+  .input-grid{
+    width: 85%;
+    gap: 4px;
+   
+  }
+  .input-grid>input[type="number"]{
+    height: 43px;
+    width: 185px;
+    box-sizing: border-box;
+    
+  }
+  .input-grid>#select1{
+    height: 43px;
+    width: 187px;
+  }
+  #select2{
+    height: 43px;
+    width: 385px;
+    margin-top: 7px;
+  }
+  .click{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 7px;
+  }
+  #click:hover{
+    transform: scale(1.2);
+    filter: brightness(140%);
+  }
+  .bmi-input>h1{
+    background:linear-gradient(to right, tomato,orange) ;
+    color: transparent;
+    background-clip: text;
+  }
+  /* form>input[type="number"]{ */
     height: 43px;
     width: 200px;
     text-align: center;
@@ -668,8 +726,8 @@ form>#select2{
     font-size: 18px;
   
     color: #fff;
-  }
-  form>#select2{
+  /* } */
+  /* form>#select2{ */
     height: 43px;
     width: 100%;
     text-align: center;
@@ -682,8 +740,8 @@ form>#select2{
     font-size: 18px;
     overflow-x: hidden;
   
-  }
-  form>#select1{
+  /* } */
+  /* form>#select1{ */
     height: 43px;
     width: 200px;
     text-align: center;
@@ -696,11 +754,22 @@ form>#select2{
     border-radius: 10px;
     font-size: 18px;
   
-  }
+  /* } */
   .bmi-input{
-    display: inline;
+    /* display: inline; */
     
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    /* margin: auto; */
+
+  }
+  .bmi-input>h1{
+    margin-left: 13px;
+
+  }
+  .bmi-input>p{
+    margin-left: 23px;
+    width: 90%;
+    
   }
   .calc-container{
     height: 750px;
